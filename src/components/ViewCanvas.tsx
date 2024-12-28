@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
-import { Perf } from "r3f-perf";
+// import { Perf } from "r3f-perf";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 
@@ -38,7 +38,7 @@ export default function ViewCanvas({}: Props) {
         <Suspense fallback={null}>
           <View.Port />
         </Suspense>
-        <Perf />
+        {/* <Perf /> */}
       </Canvas>
       <Loader />
     </>
